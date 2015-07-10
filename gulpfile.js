@@ -1,13 +1,17 @@
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 
-gulp.task('default', ['lint'])
+gulp.task('default', ['lint']);
 
 gulp.task('lint', function () {
   return gulp.src(['**/*.js'])
       // eslint() attaches the lint output to the eslint property
       // of the file object so it can be used by other modules.
       .pipe(eslint({
+        rules: {
+          'strict': 0,
+          'quotes': [2, 'single']
+        },
         envs: [
             'node'
         ]
