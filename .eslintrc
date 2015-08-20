@@ -1,0 +1,20 @@
+env:
+  node: true
+
+rules:
+  // Possible Errors
+  no-extra-semi: 1            // disallow unnecessary semicolons
+  no-inner-declarations: 2    // disallow function or variable declarations in nested blocks
+
+  // Best Practices
+  curly: 2                 // specify curly brace conventions for all control statements
+  no-eval: 2               // disallow use of eval()
+  no-extend-native: 2      // disallow adding to native types
+  no-new-wrappers: 2       // disallows creating new instances of String Number and Boolean
+  no-with: 2               // disallow use of the with statement
+
+  // style
+  no-mixed-spaces-and-tabs: 2
+  indent: [2, 2]
+  camelcase: 1
+  quotes: [1, "single", "avoid-escape"]
