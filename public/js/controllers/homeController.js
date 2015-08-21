@@ -6,9 +6,9 @@
     .module('app')
     .controller('HomeController', controller);
 
-  controller.$inject = ['$scope', '$http'];
+  controller.$inject = ['$scope'];;
 
-  function controller($scope, $http) {
+  function controller($scope) {
     $scope.dropzoneConfig = { 
       autoProcessQueue: false,
       parallelUploads: 10,
