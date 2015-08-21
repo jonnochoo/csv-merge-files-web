@@ -6,7 +6,7 @@
     .module('app')
     .controller('HomeController', controller);
 
-  controller.$inject = ['$scope'];;
+  controller.$inject = ['$scope'];
 
   function controller($scope) {
     $scope.dropzoneConfig = { 
